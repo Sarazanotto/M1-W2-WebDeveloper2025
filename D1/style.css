@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card{
+    width: 350px;
+    height: 500px;
+    color: white;
+    margin: 5rem;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 10px 5px 20px 5px rgba(1, 24, 74);
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.save button{
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(252, 8, 8);
+    border: none;
+    padding: 1rem 1.5rem;
+    font-weight: bold;
+}
+
+.save{
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    transform: translateY(-150%);
+    transition: transform 0.3s linear;
+}
+
+.card:hover .save{
+    transform: translateY(0);
+}
+
+.controls-left{
+    display: flex;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    right: 10px;
+    transform: translateY(180%);
+    transition: transform 0.3s linear;
+}
+button{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+}
+
+
+.card:hover .controls-left{
+    transform: translateY(0);
+}
+
+.controls-right{
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    gap: 20px;
+    bottom: 20px;
+    left: 10px;
+    right: 10px;
+    transform: translateY(180%);
+    transition: transform 0.3s linear;
+    font-size: 20pt;
+}
+
+
+.card:hover .controls-right{
+    transform: translateY(0px);
+}
